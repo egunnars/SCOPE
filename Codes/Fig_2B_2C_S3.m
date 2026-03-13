@@ -50,7 +50,7 @@ for j = [4,5]
 
     % load CTG data
     load("ctg_data.mat");
-    if j == 1
+    if j == 4
         ctg_data = fivefu_ctg;
     else
         ctg_data = sn38_ctg;
@@ -264,3 +264,4 @@ end
 
 summary_table = [drugs(drug_numbers)', organoids(organoid_values), dose_values, viability_score_vec, growth_score_vec, limits, no_organoids'];
 summary_table = summary_table(drug_numbers > 3,:);
+
